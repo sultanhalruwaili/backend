@@ -22,6 +22,7 @@ public class UserController {
         this.userServices = userService;
     }
 
+
     // API Method GET,POST,DELETE
     @GetMapping(path = "/api/users")
     public List<Users> getUsers() {
@@ -55,8 +56,4 @@ public class UserController {
     }
 
 
-//    @PostMapping("/user/add")
-//    public void registerNewUser(@RequestBody Users users){
-//        userServices.addNewUser(users);
-//    }
 }

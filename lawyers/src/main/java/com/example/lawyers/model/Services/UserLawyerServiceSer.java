@@ -31,13 +31,6 @@ public class UserLawyerServiceSer {
     }
 
     public List<Integer> getLawyerService(Integer service_Id) {
-//        if (userLawyerServiceRepo.existsById(service_Id)){
-//            Integer id = userLawyerServiceRepo.findLawyers(service_Id);
-//
-//            if (id.equals(service_Id)){
-//                return lawyer_Id;
-//            }
-//        }
         return userLawyerServiceRepo.findLawyers(service_Id);
     }
 

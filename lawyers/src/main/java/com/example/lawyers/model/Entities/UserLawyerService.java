@@ -1,9 +1,14 @@
 package com.example.lawyers.model.Entities;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Entity
-@Table
+@Data
+@NoArgsConstructor
 public class UserLawyerService {
 
     @Id
@@ -34,52 +39,4 @@ public class UserLawyerService {
         this.services = services;
     }
 
-
-    // Empty Constructor
-    public UserLawyerService() {
-    }
-
-
-    // Setter and Getter Method
-
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public Users getUsers() {
-        return users;
-    }
-
-    public void setUsers(Users users) {
-        this.users = users;
-    }
-
-    public Lawyers getLawyers() {
-        return lawyers;
-    }
-
-    public void setLawyers(Lawyers lawyers) {
-        this.lawyers = lawyers;
-    }
-
-    public Users getUser() {
-        return users;
-    }
-
-    public void setUser(Users users) {
-        this.users = users;
-    }
-
-    public Services getServices() {
-        return services;
-    }
-
-    public void setServices(Services services) {
-        this.services = services;
-    }
 }
